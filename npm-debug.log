@@ -1,0 +1,103 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/weiqiangwei/.nvm/versions/node/v5.10.1/bin/node',
+1 verbose cli   '/Users/weiqiangwei/.nvm/versions/node/v5.10.1/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.8.3
+3 info using node@v5.10.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/weiqiangwei/work/github/env',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/weiqiangwei/.npm/env/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/weiqiangwei/.npm correctMkdir not in flight; initializing
+10 info lifecycle env@0.0.1~prepublish: env@0.0.1
+11 silly lifecycle env@0.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/weiqiangwei/.npm/env/0.0.1/package.tgz',
+12 verbose tar pack   '/Users/weiqiangwei/work/github/env' ]
+13 verbose tarball /Users/weiqiangwei/.npm/env/0.0.1/package.tgz
+14 verbose folder /Users/weiqiangwei/work/github/env
+15 verbose addLocalTarball adding from inside cache /Users/weiqiangwei/.npm/env/0.0.1/package.tgz
+16 verbose correctMkdir /Users/weiqiangwei/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd env@0.0.1
+18 verbose afterAdd /Users/weiqiangwei/.npm/env/0.0.1/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/weiqiangwei/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/weiqiangwei/.npm/env/0.0.1/package/package.json written
+21 silly publish { name: 'env',
+21 silly publish   version: '0.0.1',
+21 silly publish   description: 'env',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository: { type: 'git', url: 'git+https://github.com/joviwei/env.git' },
+21 silly publish   keywords: [ 'env' ],
+21 silly publish   author: { name: 'crywqw' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/joviwei/env/issues' },
+21 silly publish   homepage: 'https://github.com/joviwei/env#readme',
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   _id: 'env@0.0.1',
+21 silly publish   _shasum: '76a9548f4d21ac53164663efb9d5f7452639c17b',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name env
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'env',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'env',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/env
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/weiqiangwei/.npm/env/0.0.1/package.tgz
+30 verbose request uri https://registry.npmjs.org/env
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 15:56:42
+33 verbose request using bearer token for auth
+34 verbose request id a5bdc0b04c068ec6
+35 http request PUT https://registry.npmjs.org/env
+36 http 403 https://registry.npmjs.org/env
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '97',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Fri, 15 Apr 2016 07:56:44 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-sjc3621-SJC',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1460707004.403948,VS0,VE101',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/weiqiangwei/.npm/registry.npmjs.org/env on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: you do not have permission to publish "env". Are you logged in as the correct user? : env
+40 verbose stack     at makeError (/Users/weiqiangwei/.nvm/versions/node/v5.10.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/weiqiangwei/.nvm/versions/node/v5.10.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/Users/weiqiangwei/.nvm/versions/node/v5.10.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/Users/weiqiangwei/.nvm/versions/node/v5.10.1/lib/node_modules/npm/node_modules/request/request.js:199:22)
+40 verbose stack     at emitTwo (events.js:100:13)
+40 verbose stack     at Request.emit (events.js:185:7)
+40 verbose stack     at Request.<anonymous> (/Users/weiqiangwei/.nvm/versions/node/v5.10.1/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+40 verbose stack     at emitOne (events.js:95:20)
+40 verbose stack     at Request.emit (events.js:182:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/weiqiangwei/.nvm/versions/node/v5.10.1/lib/node_modules/npm/node_modules/request/request.js:963:12)
+41 verbose statusCode 403
+42 verbose pkgid env
+43 verbose cwd /Users/weiqiangwei/work/github/env
+44 error Darwin 15.4.0
+45 error argv "/Users/weiqiangwei/.nvm/versions/node/v5.10.1/bin/node" "/Users/weiqiangwei/.nvm/versions/node/v5.10.1/bin/npm" "publish"
+46 error node v5.10.1
+47 error npm  v3.8.3
+48 error code E403
+49 error you do not have permission to publish "env". Are you logged in as the correct user? : env
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
